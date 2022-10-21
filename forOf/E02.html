@@ -1,0 +1,25 @@
+<script>
+    /*
+    PROBLEMA: Descendentes da família Silva
+    Considere a lista de nomes abaixo:
+    let nomePessoas = ["Eduardo da Silva", "Eduardo Montandon", "Lucas Eduardo", "José da Silva", "Rafael Gonçalves"];
+    Usando a estrutura de repetição "for of", contabilize quantos fazem parte da família "Silva".
+    Apresente os nomes dos descendentes da família Silva e também a quantidade de descendentes da família Silva.
+    */
+
+    //ENTRADA
+    let nomePessoas = ["Eduardo da Silva", "Eduardo Montandon", "Lucas Eduardo", "José da Silva", "Rafael Gonçalves"];
+    let quannomes = 0;
+    let nomes = [];
+    //PROCESSAMENTO
+for (const parentes of nomePessoas) {
+    if (parentes.search("Silva") >= 0) {
+        nomes.push(parentes);
+        quannomes += 1;
+    }}
+
+    //SAÍDA
+    document.write("voce tem " + quannomes + " descendentes e os nomes são " + nomes + "." )
+
+</script>
+
